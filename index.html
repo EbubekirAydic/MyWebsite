@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>MyWebsite</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container text-center my-4">
+        <div class="row">
+            <div class="col">
+                <h1 style="font-size: 40px;" class="user-select-none">Ebubekir Aydıç</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h5 class="user-select-none">Yazılım Otobiyografisi</h5>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 700px;" id="bio" class="container bg-gradient">
+        <div class="row">
+            <div class="col">
+                <p class="user-select-none">İsmim Ebubebir Aydıç. İstanbul da doğma büyüme Türkiyeliyim. Bu sitede projelerimi ve bildiğim diller hakkında yaptığım projeleri paylaşmak için kullanacağım.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container  mt-5 my-4 text-center">
+        <div class="row">
+            <div class="col">
+                <h1>Bildiğim diller</h1>
+            </div>
+        </div>
+    </div>
+    <div style="width: 700px;" class="container">
+        <div class="row row-cols-auto justify-content-center">
+            <div id="dil" class="col bg-gradient">
+                <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png" width="23px" alt="html"> Html</p>
+            </div>
+            <div id="dil" class="col bg-gradient">
+                <p><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png" width="23px" alt="css"> Css</p>
+            </div>
+            <div id="dil" class="col bg-gradient">
+                <p><img src="https://static-00.iconduck.com/assets.00/javascript-icon-256x256-8sn98o22.png" width="22px" alt="js"> JavaSript</p>
+            </div>
+            <div id="dil" class="col bg-gradient">
+                <p><img src="https://cdn-icons-png.flaticon.com/256/6132/6132221.png" width="23px" alt="C#"> C#</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row my-4">
+            <div class="col text-center">
+                <h1>Projeler</h1>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 700px;" id="bio2" class="container pt-3 pb-3 bg-gradient">
+        <div id="arama" class="row justify-content-between"> 
+            <div class="col-8">
+                <input type="text bg-gradient"><button id="aramaButonu"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="col-4 text-end">
+                <button id="dilsec">Dil Seç <i class="fa-solid fa-code"></i> <i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+        <div id="bio2" class="container mt-2">
+            <div class="row row-cols-auto">
+            <div class="col my-3 ms-3 p-0">
+                <button onclick='secilenCreate("https:/", "/uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png", "Html")' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png" width="23px" alt="html"> Html </button>
+            </div>
+            <div class="col my-3 ms-3 p-0">
+                <button onclick='secilenCreate("https:/", "/uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png", "Css")' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png" width="23px" alt="css"> Css </button>
+            </div>
+            <div class="col my-3 ms-3 p-0">
+                <button onclick='secilenCreate("https:/", "/static-00.iconduck.com/assets.00/javascript-icon-256x256-8sn98o22.png", "Js")' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img src="https://static-00.iconduck.com/assets.00/javascript-icon-256x256-8sn98o22.png" width="22px" alt="js"> JavaSript </button>
+            </div>
+            <div class="col my-3 ms-3 p-0">
+                <button onclick='secilenCreate("https:/", "/cdn-icons-png.flaticon.com/256/6132/6132221.png", "C#")' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img src="https://cdn-icons-png.flaticon.com/256/6132/6132221.png" width="23px" alt="C#"> C#</button>
+            </div>
+            </div>
+        </div>
+        <div id="secilenler" class="row row-cols-auto">
+
+            
+            <div id="SecHtml" class="col mt-3 ms-3 p-0">
+                <span class="secilen"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png" width="23px" alt="html"> Html <button onclick="DeleteSec(SecHtml)"><i class="fa-brands fa-x-twitter"></i></button></span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="assets/script.js"></script>
+</body>
+</html>
