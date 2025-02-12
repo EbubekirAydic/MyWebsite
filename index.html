@@ -69,37 +69,71 @@
     </div>
 
     <div style="max-width: 700px;" id="bio2" class="container pt-3 pb-3 bg-gradient">
-        <div id="arama" class="row justify-content-between"> 
-            <div class="col-8">
+
+        <div id="arama" class="row justify-content-between px-3"> 
+            <div id="aramaInput" class="col-9 p-0">
                 <input type="text bg-gradient"><button id="aramaButonu"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
-            <div class="col-4 text-end">
-                <button id="dilsec">Dil Seç <i class="fa-solid fa-code"></i> <i class="fa-solid fa-bars"></i></button>
+            <div class="col-3 text-end p-0">
+                <button id="dilsec">Filtre <i class="fa-solid fa-filter"></i></button>
             </div>
         </div>
-        <div id="bio2" class="container mt-2">
-            <div class="row row-cols-auto">
-            <div class="col my-3 ms-3 p-0">
-                <button onclick='secilenCreate("https:/", "/uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png", "Html")' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png" width="23px" alt="html"> Html </button>
-            </div>
-            <div class="col my-3 ms-3 p-0">
-                <button onclick='secilenCreate("https:/", "/uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png", "Css")' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png" width="23px" alt="css"> Css </button>
-            </div>
-            <div class="col my-3 ms-3 p-0">
-                <button onclick='secilenCreate("https:/", "/static-00.iconduck.com/assets.00/javascript-icon-256x256-8sn98o22.png", "Js")' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img src="https://static-00.iconduck.com/assets.00/javascript-icon-256x256-8sn98o22.png" width="22px" alt="js"> JavaSript </button>
-            </div>
-            <div class="col my-3 ms-3 p-0">
-                <button onclick='secilenCreate("https:/", "/cdn-icons-png.flaticon.com/256/6132/6132221.png", "C#")' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img src="https://cdn-icons-png.flaticon.com/256/6132/6132221.png" width="23px" alt="C#"> C#</button>
-            </div>
-            </div>
-        </div>
-        <div id="secilenler" class="row row-cols-auto">
 
-            
+        <div id="bio2" class="container mt-2 pt-3">
+            <div class="row">
+                <h1>Diller :</h1>
+            </div>
+            <div class="row row-cols-auto pb-3">
+                <div class="col mt-3 ms-2 p-0">
+                    <button onclick='secilenCreate("https:/", "/uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png", "Html")' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png" width="23px" alt="html"> Html </button>
+                </div>
+                <div class="col mt-3 ms-2 p-0">
+                    <button onclick='secilenCreate("https:/", "/uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png", "Css")' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png" width="23px" alt="css"> Css </button>
+                </div>
+                <div class="col mt-3 ms-2 p-0">
+                    <button onclick='secilenCreate("https:/", "/static-00.iconduck.com/assets.00/javascript-icon-256x256-8sn98o22.png", "Js")' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img src="https://static-00.iconduck.com/assets.00/javascript-icon-256x256-8sn98o22.png" width="22px" alt="js"> JavaSript </button>
+                </div>
+                <div class="col mt-3 ms-2 p-0">
+                    <button onclick='secilenCreate("https:/", "/cdn-icons-png.flaticon.com/256/6132/6132221.png", "C#")' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img src="https://cdn-icons-png.flaticon.com/256/6132/6132221.png" width="23px" alt="C#"> C#</button>
+                </div>
+            </div>
+            <div class="row">
+                <h1>Yapımcılar :</h1>
+            </div>
+            <div class="row row-cols-auto">
+                <div class="col mt-3 ms-2 p-0">
+                    <button onclick='secilenCreate("https:/", "/uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png", "Html")' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png" width="23px" alt="html"> Html </button>
+                </div>
+                <div class="col mt-3 ms-2 p-0">
+                    <button onclick='secilenCreate("https:/", "/uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png", "Css")' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png" width="23px" alt="css"> Css </button>
+                </div>
+                <div class="col mt-3 ms-2 p-0">
+                    <button onclick='secilenCreate("https:/", "/static-00.iconduck.com/assets.00/javascript-icon-256x256-8sn98o22.png", "Js")' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img src="https://static-00.iconduck.com/assets.00/javascript-icon-256x256-8sn98o22.png" width="22px" alt="js"> JavaSript </button>
+                </div>
+                <div class="col mt-3 ms-2 p-0">
+                    <button onclick='secilenCreate("https:/", "/cdn-icons-png.flaticon.com/256/6132/6132221.png", "C#")' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img src="https://cdn-icons-png.flaticon.com/256/6132/6132221.png" width="23px" alt="C#"> C#</button>
+                </div>
+            </div>
+            <div class="row">
+                <h1>Proje türü :</h1>
+            </div>
+            <div class="row row-cols-auto">
+                <div class="col mt-3 ms-2 p-0">
+                    <button onclick='secilenCreate("https:/", "/uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png", "Html")' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png" width="23px" alt="html"> Html </button>
+                </div>
+                <div class="col mt-3 ms-2 p-0">
+                    <button onclick='secilenCreate("https:/", "/uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png", "Css")' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png" width="23px" alt="css"> Css </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="secilenler" class="row row-cols-auto">
             <div id="SecHtml" class="col mt-3 ms-3 p-0">
                 <span class="secilen"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png" width="23px" alt="html"> Html <button onclick="DeleteSec(SecHtml)"><i class="fa-brands fa-x-twitter"></i></button></span>
             </div>
         </div>
+
+
     </div>
     
     <script src="assets/script.js"></script>

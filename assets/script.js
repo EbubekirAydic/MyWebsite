@@ -30,7 +30,8 @@ function secilenCreate(url1,url2,name) {
 
         console.log(secilenlerDiv[0].children[i].id);
         console.log(`Sec${name}`);
-        if (`Sec${name}` == secilenlerDiv[0].children[i].id) {
+
+        if (`Sec${name2}` == secilenlerDiv[0].children[i].id) {
             console.log("EŞİT");
             Varmı = true
         }else{
