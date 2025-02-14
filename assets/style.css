@@ -124,3 +124,31 @@ body{
 #aramaInput{
     display:inline-block;
 }
+
+
+#Filtre{
+    background-color: #212529;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid rgb(95, 95, 95);
+    transition: background-color 0.4s, border 0.4s, height 0.3s, color 0.2s;
+}
+#Filtre:hover{
+    background-color: #212529;
+    border: 2px solid rgb(139, 139, 139);
+}
+
+.close{
+    display: none;
+    color: #00000000;
+}
+
+.Game{
+    margin-top: 30px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    background-color: #181e24;
+    border: #2f3235 solid 2px;
+}

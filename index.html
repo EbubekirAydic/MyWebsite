@@ -75,11 +75,11 @@
                 <input type="text bg-gradient"><button id="aramaButonu"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
             <div class="col-3 text-end p-0">
-                <button id="dilsec">Filtre <i class="fa-solid fa-filter"></i></button>
+                <button onclick="ToggleOperation(document.getElementById('Filtre'),'close')" id="dilsec">Filtre <i class="fa-solid fa-filter"></i></button>
             </div>
         </div>
 
-        <div id="bio2" class="container mt-2 pt-3">
+        <div id="Filtre" class="close container mt-2 pt-3">
             <div class="row">
                 <h1>Diller :</h1>
             </div>
@@ -100,39 +100,222 @@
             <div class="row">
                 <h1>Yapımcılar :</h1>
             </div>
-            <div class="row row-cols-auto">
+            <div class="row row-cols-auto pb-3">
                 <div class="col mt-3 ms-2 p-0">
-                    <button onclick='secilenCreate("https:/", "/uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png", "Html")' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png" width="23px" alt="html"> Html </button>
+                    <button onclick='secilenCreate("assets/images/197036223.jpeg", "", "EbubebirAydıç",1)' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img style="border-radius: 300px;" src="assets/images/197036223.jpeg" width="23px" alt="html"> Ebubebir Aydıç </button>
                 </div>
                 <div class="col mt-3 ms-2 p-0">
-                    <button onclick='secilenCreate("https:/", "/uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png", "Css")' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png" width="23px" alt="css"> Css </button>
+                    <button onclick='secilenCreate("assets/images/193140219.jpeg", "", "NurullahBayrak",1)' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img style="border-radius: 300px;" src="assets/images/193140219.jpeg" width="23px" alt="css"> Nurullah Bayrak </button>
                 </div>
                 <div class="col mt-3 ms-2 p-0">
-                    <button onclick='secilenCreate("https:/", "/static-00.iconduck.com/assets.00/javascript-icon-256x256-8sn98o22.png", "Js")' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img src="https://static-00.iconduck.com/assets.00/javascript-icon-256x256-8sn98o22.png" width="22px" alt="js"> JavaSript </button>
-                </div>
-                <div class="col mt-3 ms-2 p-0">
-                    <button onclick='secilenCreate("https:/", "/cdn-icons-png.flaticon.com/256/6132/6132221.png", "C#")' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img src="https://cdn-icons-png.flaticon.com/256/6132/6132221.png" width="23px" alt="C#"> C#</button>
-                </div>
-            </div>
-            <div class="row">
-                <h1>Proje türü :</h1>
-            </div>
-            <div class="row row-cols-auto">
-                <div class="col mt-3 ms-2 p-0">
-                    <button onclick='secilenCreate("https:/", "/uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png", "Html")' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png" width="23px" alt="html"> Html </button>
-                </div>
-                <div class="col mt-3 ms-2 p-0">
-                    <button onclick='secilenCreate("https:/", "/uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png", "Css")' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png" width="23px" alt="css"> Css </button>
+                    <button onclick='secilenCreate("assets/images/197283827.jpeg", "", "BiterGames",1)' class="secilen"><i style="color: rgba(179, 181, 182, 0.625);" class="fa-regular fa-square-check"></i> <img style="border-radius: 300px;" src="assets/images/197283827.jpeg" width="22px" alt="js"> Biter Games </button>
                 </div>
             </div>
         </div>
 
         <div id="secilenler" class="row row-cols-auto">
+
             <div id="SecHtml" class="col mt-3 ms-3 p-0">
                 <span class="secilen"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png" width="23px" alt="html"> Html <button onclick="DeleteSec(SecHtml)"><i class="fa-brands fa-x-twitter"></i></button></span>
             </div>
+
+        </div>
+    <div id="Games" class="container">
+        
+        <div id="MatematikOyunu" class="container bg-gradient Game SecHtml SecJs SecCss SecEbubebirAydıç">
+            <div class="row">
+                <div class="col">
+                    <h1>4 işlem matematik oyunu</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Matematiğinizi geliştirmek ve öğrenmek için yapılmış bir oyun. Oyunda zorluk seviyesinden tutun, süre, ve hangi 4 işlemi yapmak istediğimizi seçebiliyoruz!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img width="400px" src="assets/images/Ekran görüntüsü 2025-02-14 004225.png" alt="Oyun Görseli">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="https://biter-games.github.io/MemoryGame/">OYNA</a>
+                </div>
+            </div>
+            <div class="row row-cols-auto">
+                <div class="col mt-3 ms-3 p-0">
+                    <span class="secilen"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png" width="23px" alt="html"> Html</span>
+                </div>
+                <div class="col mt-3 ms-3 p-0">
+                    <span class="secilen"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png" width="23px" alt="html"> Css</span>
+                </div>
+                <div class="col mt-3 ms-3 p-0">
+                    <span class="secilen"><img src="https://static-00.iconduck.com/assets.00/javascript-icon-256x256-8sn98o22.png" width="23px" alt="html"> JavaSript</span>
+                </div>
+                <div class="col mt-3 ms-3 p-0">
+                    <span class="secilen"><img style="border-radius: 300px;" src="assets/images/197036223.jpeg" width="23px" alt="html"> Ebubebir Aydıç</span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="AdamAsmaca" class="container bg-gradient Game SecHtml SecJs SecCss SecEbubebirAydıç SecNurullahBayrak">
+            <div class="row">
+                <div class="col">
+                    <h1>Adam Asmaca</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Kendi konuları seçebildiğiniz adam asmaca oyunu!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img width="400px" src="assets/images/AdamAsmaca.png" alt="Oyun Görseli">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="https://biter-games.github.io/AdamAsmaca/">OYNA</a>
+                </div>
+            </div>
+            <div class="row row-cols-auto">
+                <div class="col mt-3 ms-3 p-0">
+                    <span class="secilen"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png" width="23px" alt="html"> Html</span>
+                </div>
+                <div class="col mt-3 ms-3 p-0">
+                    <span class="secilen"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png" width="23px" alt="html"> Css</span>
+                </div>
+                <div class="col mt-3 ms-3 p-0">
+                    <span class="secilen"><img src="https://static-00.iconduck.com/assets.00/javascript-icon-256x256-8sn98o22.png" width="23px" alt="html"> JavaSript</span>
+                </div>
+                <div class="col mt-3 ms-3 p-0">
+                    <span class="secilen"><img style="border-radius: 300px;" src="assets/images/197036223.jpeg" width="23px" alt="html"> Ebubebir Aydıç</span>
+                </div>
+                <div class="col mt-3 ms-3 p-0">
+                    <span class="secilen"><img style="border-radius: 300px;" src="assets/images/193140219.jpeg" width="23px" alt="html"> Nurullah Bayrak</span>
+                </div>
+            </div>
         </div>
 
+        <div id="Memory" class="container bg-gradient Game SecHtml SecJs SecCss SecEbubebirAydıç SecNurullahBayrak">
+            <div class="row">
+                <div class="col">
+                    <h1>Memory Game</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Simon hafıza oyunu!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img width="400px" src="assets/images/Memory Game.png" alt="Oyun Görseli">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="https://biter-games.github.io/MemoryGame/">OYNA</a>
+                </div>
+            </div>
+            <div class="row row-cols-auto">
+                <div class="col mt-3 ms-3 p-0">
+                    <span class="secilen"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png" width="23px" alt="html"> Html</span>
+                </div>
+                <div class="col mt-3 ms-3 p-0">
+                    <span class="secilen"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png" width="23px" alt="html"> Css</span>
+                </div>
+                <div class="col mt-3 ms-3 p-0">
+                    <span class="secilen"><img src="https://static-00.iconduck.com/assets.00/javascript-icon-256x256-8sn98o22.png" width="23px" alt="html"> JavaSript</span>
+                </div>
+                <div class="col mt-3 ms-3 p-0">
+                    <span class="secilen"><img style="border-radius: 300px;" src="assets/images/197036223.jpeg" width="23px" alt="html"> Ebubebir Aydıç</span>
+                </div>
+                <div class="col mt-3 ms-3 p-0">
+                    <span class="secilen"><img style="border-radius: 300px;" src="assets/images/193140219.jpeg" width="23px" alt="html"> Nurullah Bayrak</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="Yılan" class="container bg-gradient Game SecHtml SecJs SecCss SecEbubebirAydıç">
+            <div class="row">
+                <div class="col">
+                    <h1>Yılan oyunu</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Klasik Yılan Oyunu</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img width="300px" src="assets/images/Yılan Oyunu.png" alt="Oyun Görseli">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="https://biter-games.github.io/MemoryGame/">OYNA</a>
+                </div>
+            </div>
+            <div class="row row-cols-auto">
+                <div class="col mt-3 ms-3 p-0">
+                    <span class="secilen"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png" width="23px" alt="html"> Html</span>
+                </div>
+                <div class="col mt-3 ms-3 p-0">
+                    <span class="secilen"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png" width="23px" alt="html"> Css</span>
+                </div>
+                <div class="col mt-3 ms-3 p-0">
+                    <span class="secilen"><img src="https://static-00.iconduck.com/assets.00/javascript-icon-256x256-8sn98o22.png" width="23px" alt="html"> JavaSript</span>
+                </div>
+                <div class="col mt-3 ms-3 p-0">
+                    <span class="secilen"><img style="border-radius: 300px;" src="assets/images/197036223.jpeg" width="23px" alt="html"> Ebubebir Aydıç</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="Karne" class="container bg-gradient Game SecHtml SecJs SecCss SecEbubebirAydıç">
+            <div class="row">
+                <div class="col">
+                    <h1>Karne Hesaplayıcı</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>1.dönem ve 2.dönem karnenizi hesaplayabiliyorsunuz.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img width="400px" src="assets/images/Karne.png" alt="Oyun Görseli">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="https://biter-games.github.io/MemoryGame/">OYNA</a>
+                </div>
+            </div>
+            <div class="row row-cols-auto">
+                <div class="col mt-3 ms-3 p-0">
+                    <span class="secilen"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/html-icon.png" width="23px" alt="html"> Html</span>
+                </div>
+                <div class="col mt-3 ms-3 p-0">
+                    <span class="secilen"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png" width="23px" alt="html"> Css</span>
+                </div>
+                <div class="col mt-3 ms-3 p-0">
+                    <span class="secilen"><img src="https://static-00.iconduck.com/assets.00/javascript-icon-256x256-8sn98o22.png" width="23px" alt="html"> JavaSript</span>
+                </div>
+                <div class="col mt-3 ms-3 p-0">
+                    <span class="secilen"><img style="border-radius: 300px;" src="assets/images/197036223.jpeg" width="23px" alt="html"> Ebubebir Aydıç</span>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+        
+    </div>
 
     </div>
     
