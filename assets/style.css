@@ -1,3 +1,8 @@
+html{
+    scrollbar-width: thin; /* İnce yapar */
+    scrollbar-color: #888 #333; /* Kaydırma çubuğu ve yol rengi */
+}
+
 body{
     color: #f8f9fa;
     background-color: #181e24; 
@@ -151,4 +156,23 @@ body{
     border-radius: 10px;
     background-color: #181e24;
     border: #2f3235 solid 2px;
+}
+
+.radius{
+    border-radius: 10px;
+    box-shadow: 10px #181e24;
+}
+
+@media (min-width:768px){
+    .Pc{
+        width: 700px;
+    }
+}
+
+.OynaButton{
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-color: #36414d;
+    color: #efefef;
+    font-family: Arial, Helvetica, sans-serif;
 }

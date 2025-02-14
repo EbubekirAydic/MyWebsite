@@ -121,3 +121,27 @@ function ProjelerYenile() {
         }
     }
 }
+
+function AramaYap() {
+    const searchTerm = document.getElementById('aramaInput2').value.toLowerCase();
+    const items = GamesArray;
+
+    console.log(items);
+    console.log(searchTerm);
+
+    items.forEach(item => {
+      const title = item.textContent.toLowerCase();
+      item.style.display = title.includes(searchTerm) ? 'block' : 'none';
+    });
+}
+
+$("#aramaInput2").keydown(function(event) {
+
+
+    if (event.keyCode == 13) {
+        AramaYap();
+    }
+
+})
+
+
